@@ -6,6 +6,7 @@ import { TemplatePicker } from "./template-picker";
 import { ExportMenu } from "./export-menu";
 import { LayoutModeToggle } from "./layout-mode-toggle";
 import { DeployControl } from "./deploy-control";
+import { ConvertChip } from "./convert-chip";
 
 export function Toolbar({
   iframeRef,
@@ -93,6 +94,7 @@ export function Toolbar({
           configRev={deployConfigRev}
         />
         <ExportMenu iframeRef={iframeRef} />
+        <ConvertChip />
       </div>
     </header>
   );
